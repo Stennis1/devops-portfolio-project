@@ -6,13 +6,14 @@ A **production-grade, cloud-native DevOps platform** demonstrating real-world en
 This project showcases how to design, deploy, and operate a **scalable event-driven system** using modern DevOps and platform engineering tools.
 
 ---
+Architecture Diagram
+![Architecture Diagram](docs/image.png)
 
 ## 🚀 Live Demo 
 
 🔗 **Coming soon** — available once infrastructure and frontend deployment are complete.
 
 ---
-
 ## 📂 Repository Structure
 
 ```bash
