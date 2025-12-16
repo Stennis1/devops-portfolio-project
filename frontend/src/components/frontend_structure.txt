@@ -1,3 +1,45 @@
+---- DEVOPS PROJECT ----
+devops-project/
+├── infra/                     # Terraform code + modules
+│   ├── modules/
+│   │   ├── vpc/
+│   │   ├── eks/
+│   │   ├── rds/
+│   │   ├── ecr/
+│   │   └── iam/
+│   └── envs/
+│       ├── staging/
+│       └── prod/
+├── platform-config/           # Helm charts / kustomize
+│   ├── charts/
+│   │   └── app-chart/
+│   └── manifests/
+├── services/
+│   ├── api-service/
+│   │   ├── Dockerfile
+│   │   ├── src/
+│   │   └── k8s/
+│   ├── worker-service/
+│   └── dashboard/
+├── frontend/
+│   └── web-app/               # React app for demo, deploy to Vercel
+├── ci/                        # GitHub Actions templates (reusable)
+├── observability/
+│   └── prometheus/
+│   └── grafana/
+│   └── loki/
+├── scripts/                   # helper scripts (deploy, health-checks)
+├── README.md
+└── docs/
+    └── architecture.md
+├── frontend/        # React app (Vite + npm)
+├── backend/         # API (Node.js / Express)
+├── infra/           # Terraform (AWS, EKS, etc.)
+├── ci/              # GitHub Actions workflows
+├── observability/   # Prometheus, Grafana configs
+└── README.md
+
+---- FRONTEND STRUCTURE ----
 frontend/
 ├── index.html
 ├── package.json
@@ -22,3 +64,14 @@ frontend/
 │   │   └── AuthContext.tsx
 │   └── styles/
 │       └── index.css
+
+
+---- BACKEND STRUCTURE ----
+backend/
+├── src/
+│   ├── routes/
+│   ├── controllers/
+│   ├── app.ts
+│   └── server.ts
+├── package.json
+└── Dockerfile (later)
