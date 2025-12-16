@@ -1,0 +1,24 @@
+frontend/
+├── index.html
+├── package.json
+├── vite.config.ts
+├── .env.development
+├── .env.production
+├── src/
+│   ├── main.tsx
+│   ├── App.tsx
+│   ├── pages/
+│   │   ├── Login.tsx
+│   │   ├── Signup.tsx
+│   │   └── Dashboard.tsx
+│   ├── components/
+│   │   ├── AuthInput.tsx
+│   │   ├── AuthButton.tsx
+│   │   └── Navbar.tsx
+│   ├── services/
+│   │   ├── api.ts
+│   │   └── authService.ts
+│   ├── context/
+│   │   └── AuthContext.tsx
+│   └── styles/
+│       └── index.css
