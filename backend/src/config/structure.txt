@@ -1,0 +1,19 @@
+backend/
+├── src/
+│   ├── app.ts
+│   ├── server.ts
+│   ├── routes/
+│   │   └── auth.routes.ts
+│   ├── controllers/
+│   │   └── auth.controller.ts
+│   ├── services/
+│   │   └── auth.service.ts
+│   ├── config/
+│   │   ├── env.ts
+│   │   └── passport.ts
+│   └── utils/
+│       └── jwt.ts
+├── .env.development
+├── .env.production
+├── package.json
+└── tsconfig.json
