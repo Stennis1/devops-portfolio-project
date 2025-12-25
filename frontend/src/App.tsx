@@ -6,6 +6,10 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import HomePage from "./pages/Homepage";
+import Monitoring from "./pages/monitoring";
+import Analytics from "./pages/analytics";
+import Deployment from "./pages/deployment";
+import ProfileSettings from "./pages/ProfileSettings";
 import { AuthProvider, AuthContext } from "./context/AuthContext";
 
 function ProtectedRoute({ children }: { children: ReactNode }) {
@@ -26,6 +30,38 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/monitoring"
+            element={
+              <ProtectedRoute>
+                <Monitoring />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/analytics"
+            element={
+              <ProtectedRoute>
+                <Analytics />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/deployment"
+            element={
+              <ProtectedRoute>
+                <Deployment />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/profile"
+            element={
+              <ProtectedRoute>
+                <ProfileSettings />
               </ProtectedRoute>
             }
           />
