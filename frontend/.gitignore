@@ -22,3 +22,19 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# OS
+.DS_Store
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Logs
+*.log
+
+# General builds
+dist/
+build/
